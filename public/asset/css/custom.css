@@ -1,0 +1,594 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    background: #1f2428;
+    font-family: 'Rajdhani', sans-serif;
+    color: #fff;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5EB3F0
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 62.52px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 34px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+input,
+button {
+    background: transparent !important;
+    border: 1px solid #fff !important;
+    outline: none !important;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none !important;
+}
+
+input,
+select {
+    height: 42px;
+    line-height: 42px;
+    margin-bottom: 25px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    letter-spacing: 2px;
+    font-weight: 600 !important;
+}
+
+input::placeholder {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+input[type=date] {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    color-scheme: dark;
+}
+
+select {
+    z-index: 10;
+    position: relative;
+    background: transparent !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.select-arrow {
+    position: absolute;
+    bottom: 12px;
+    right: 15px;
+}
+
+.button {
+    height: 51px;
+    line-height: 51px;
+    padding: 0 30px !important;
+    background: #2B3238 !important;
+    border-radius: 0 !important;
+    width: 198px !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.back i {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.back a {
+    color: #fff
+}
+
+option {
+    color: #fff;
+    background-color: #1f2428;
+}
+
+.form-group i {
+    color: #fff !important
+}
+
+.menu-icon a span {
+    width: 22px;
+    height: 4px;
+    background-color: #ccc;
+    display: block;
+    position: relative;
+    margin-bottom: 4px;
+    transition: all 0.5s ease;
+}
+
+
+/* navbar css */
+
+header {
+    font-style: italic;
+    border-bottom: 1px solid #8f9193;
+    position: fixed;
+    width: 100%;
+    background: #1f2428;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+.logo {
+    color: #8f9193;
+}
+
+.admin-name {
+    letter-spacing: 1.5px;
+}
+
+.left-panel {
+    width: 180px;
+    position: fixed;
+    height: 100vh;
+    border-right: 1px solid #8f9193;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+nav ul li,
+.main-links li {
+    padding-bottom: 30px;
+}
+
+nav ul li a,
+.main-links li a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.right-panel {
+    width: calc(100% - 180px);
+    margin-left: 180px !important;
+}
+
+.content-area {
+    padding: 80px 0 0 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-size: 16px; */
+}
+
+.breadcrumb {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1.3px;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
+
+.breadcrumb i {
+    font-size: 14px;
+}
+
+.content-area input,
+.content-area select {
+    text-transform: capitalize !important;
+}
+
+.btn {
+    border-radius: 25px;
+    width: 180px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.btn.btn-primary {
+    background-color: #00C4FF !important;
+    border-color: #00C4FF !important
+}
+
+.btn:hover {
+    color: #fff !important
+}
+
+.modal-content {
+    background: #1e1e1e;
+    border: 1px solid #707070;
+    padding: 40px 0 20px;
+}
+
+.modal-title {
+    font-weight: 700;
+}
+
+.close {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    color: #fff;
+    font-size: 32px;
+}
+
+.content-area input,
+.content-area select {
+    border: 1px solid #707070;
+    font-size: 16px !important;
+    letter-spacing: 1px !important;
+    font-weight: 700 !important;
+}
+
+.form-group label {
+    font-weight: 400;
+    color: #7d7d7d;
+}
+
+.btn3 {
+    border-radius: 25px !important;
+    font-size: 18px;
+}
+
+.content-area input.search-input {
+    border: 1px solid #fff !important;
+    border-radius: 25px;
+    width: 360px;
+}
+
+.fnt-bold {
+    font-weight: bold;
+}
+
+.modal-body {
+    padding-left: 30px !important;
+    padding-right: 30px !important
+}
+
+table th {
+    color: #e2e3e3;
+    font-weight: 400 !important;
+}
+
+
+/* database table */
+
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr[role="row"]>th:first-child:before {
+    background-color: #29cc97;
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    border: 0;
+    font-weight: bold;
+    box-shadow: none;
+}
+
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td:first-child:before,
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th:first-child:before {
+    background-color: fec400;
+}
+
+
+/* tab */
+
+.nav-tabs li {
+    padding: 8px 10px;
+}
+
+.nav-tabs li a {
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-tabs li a.active {
+    color: #00C4FF;
+}
+
+
+/* datepicker css */
+
+
+/* input {
+
+    padding: 10px 20px !important;
+
+    border: 1px solid #000 !important;
+
+    border-radius: 10px;
+
+    box-sizing: border-box;
+
+    background-color: #616161 !important;
+
+    color: #fff !important;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    width: 180px;
+
+}
+
+
+
+input:focus {
+
+    -moz-box-shadow: none !important;
+
+    -webkit-box-shadow: none !important;
+
+    box-shadow: none !important;
+
+    border: 1px solid #512DA8;
+
+    outline-width: 0;
+
+}
+
+
+
+::placeholder {
+
+    color: #fff;
+
+    opacity: 1;
+
+}
+
+
+
+:-ms-input-placeholder {
+
+    color: #fff;
+
+}
+
+
+
+::-ms-input-placeholder {
+
+    color: #fff;
+
+} */
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0;
+}
+
+.datepicker {
+    background-color: #262A2E !important;
+    color: #fff !important;
+    border: none;
+    padding: 10px !important;
+}
+
+input.datepicker {
+    width: 180px;
+}
+
+.datepicker-dropdown:after {
+    border-bottom: 6px solid #fff;
+}
+
+thead tr:nth-child(3) th {
+    color: #fff !important;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.dow,
+.old-day,
+.day,
+.new-day {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 0px !important;
+}
+
+.old-day:hover,
+.day:hover,
+.new-day:hover,
+.month:hover,
+.year:hover,
+.decade:hover,
+.century:hover {
+    border-radius: 6px !important;
+    background-color: #eee;
+    color: #000;
+}
+
+.disabled {
+    color: #616161 !important;
+}
+
+.prev,
+.next,
+.datepicker-switch {
+    border-radius: 0 !important;
+    padding: 20px 10px !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff !important;
+    opacity: 0.8;
+}
+
+.prev:hover,
+.next:hover,
+.datepicker-switch:hover {
+    background-color: inherit !important;
+    opacity: 1;
+}
+
+.cell {
+    border: 1px solid #BDBDBD;
+    margin: 2px;
+    cursor: pointer;
+    color: #fff !important;
+    font-weight: 600 !important;
+    border-radius: 3px;
+}
+
+.cell:hover {
+    border: 1px solid #fff;
+    color: #000 !important;
+    background: #fff !important;
+}
+
+.cell.select {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+.cell.selected {
+    background-color: transparent !important;
+    color: #46B2FF !important;
+    border: none !important
+}
+
+.fa-calendar {
+    color: #fff !important;
+    font-size: 30px;
+    padding-top: 8px;
+    padding-left: 5px;
+    cursor: pointer;
+    width: auto !important
+}
+
+#schedule .bg-dark,
+.breadcrumb {
+    background: transparent !important;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width:991px) {
+    .operation-form label.text-end {
+        text-align: left !important;
+    }
+    .dataTables_wrapper .col-md-6{
+        width: 100% !important;
+    }
+    #responsive-data-table_filter {position: relative; top:0; left: 0;}
+}
+
+@media only screen and (max-width:767px) {
+    .right-panel {
+        width: 100%;
+        margin-left: 0px !important;
+    }
+    .left-panel {
+        position: fixed;
+        right: -200px;
+        top: 79px;
+        margin-right: -200px;
+        opacity: 0;
+        visibility: hidden;
+        overflow: scroll;
+        height: 100%;
+        padding-bottom: 100px;
+        transition: all 0.3s ease-in-out;
+        padding: 20px 10px 20px 20px;
+    }
+    .left-panel.menu-slide {
+        opacity: 1;
+        margin-right: 0;
+        visibility: visible;
+        background: #262b2f;
+        right: 0;
+        z-index: 10;
+    }
+    .menu-icon.cross a span:nth-child(3) {
+        transform: translateY(-75%) rotate(-45deg);
+    }
+    .menu-icon.cross a span:nth-child(2) {
+        transform: translateY(75%) rotate(45deg);
+    }
+    .menu-icon.cross a span:nth-child(1) {
+        opacity: 0;
+    }
+    .menu-icon.cross a span {
+        margin-bottom: 2px;
+    }
+    #responsive-data-table_filter {left: 50%; transform: translateX(-50%);}
+    .signup section {
+        height: 100% !important; padding-top:30px !important; padding-bottom: 30px !important;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .admin-name strong {
+        display: none;
+    }
+    .add-btn {
+        width:150px !important; 
+        font-size: 16px;
+        padding: 0 10px !important;}
+    #responsive-data-table_filter input {width:190px}
+}
+
+@media only screen and (orientation : landscape) { 
+.login section {height: 100% !important; padding-top:30px !important; padding-bottom: 30px !important;}
+}
