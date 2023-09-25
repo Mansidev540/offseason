@@ -112,7 +112,8 @@ table {
     padding: 0 30px !important;
     background: #2B3238 !important;
     border-radius: 0 !important;
-    width: 198px !important;
+    /* width: 198px !important; */
+    width: fit-content !important;
     color: #fff !important;
     text-transform: uppercase;
     font-size: 20px;

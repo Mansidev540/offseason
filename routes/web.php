@@ -60,6 +60,8 @@ Route::group(['prefix' => 'club','middleware' =>'auth',"as"=>"club."], function 
     Route::get('/detail/{id}', [App\Http\Controllers\ClubModuleController::class, 'detail'])->name('detail');
     Route::post('/save', [App\Http\Controllers\ClubModuleController::class, 'save'])->name('save');
     Route::post('/date', [App\Http\Controllers\ClubModuleController::class, 'date'])->name('date');
+    Route::get('/balance', [App\Http\Controllers\ClubModuleController::class, 'balancePage'])->name('balance');
+    Route::get('/check_stripe_account', [App\Http\Controllers\ClubModuleController::class, 'checkStripeAccount'])->name('check_stripe_account');
 }); 
 Route::group(['prefix' => 'roster','middleware' =>'auth',"as"=>"roster."], function () {
     Route::get('/index', [App\Http\Controllers\RosterController::class, 'index'])->name('index');
