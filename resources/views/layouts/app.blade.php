@@ -121,7 +121,7 @@
                   <img src="{{ asset('asset/images/Offszn.png') }}" alt="OFFSEASON" width="100"> <strong>Athlete</strong>  
                 <?php } ?>
             </div>
-            <div class="right-side d-flex">
+            <div class="right-side d-flex">                
                 <div class="admin-name">
                     <?php
                     if($user->role == "club"){
@@ -140,7 +140,7 @@
             </div>
         </div>
     </header>
-    <section class="content-area position-relative">
+    <section class="content-area position-relative">    
       
             <div class="left-panel p-4">
                 <nav>
@@ -152,7 +152,7 @@
                         <li><a href="{{ route('roster.index') }}">Roster</a></li>
                         <li><a href="{{ route('member.index') }}">Member</a></li>
                         <li><a href="{{ route('rental.index') }}">Rentals</a></li>
-                        <li><a href="{{ route('service.index') }}">Services</a></li>
+                        <li><a href="{{ route('service.index') }}">Services</a></li>   
                         <?php }else{?>
                             <li><a href="{{ route('trainercalender.index') }}">Calender</a></li>
                             <li><a href="{{ route('club.index') }}">Club</a></li>
@@ -173,7 +173,7 @@
                     </ul>
                 </nav>
             </div>
-            @yield('content')
+            @yield('content')        
         
 </section>
 
