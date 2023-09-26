@@ -157,7 +157,7 @@
                             <li><a href="{{ route('trainercalender.index') }}">Calender</a></li>
                             <li><a href="{{ route('club.index') }}">Club</a></li>
                            <?php }?>
-                        <li><a href="balance.html">Balance</a></li>
+                        <li><a href="{{ route('club.balance') }}">Balance</a></li>
                         <li><a href="{{ route('setting.index') }}">Settings</a></li>
                         <li>
                                     <a href="{{ route('logout') }}"
