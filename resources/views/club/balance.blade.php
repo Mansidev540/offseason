@@ -40,23 +40,6 @@
     @endif
   </div>
 
-  {{-- create new account modal --}}
-  <div class="modal fade" id="create_account">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <h2 class="text-center">Create Stripe Account</h2>
-        <div class="modal-body">
-          <input type="text" name="mail" id="mail" class="form-control mb-0">
-          <div class="d-flex justify-content-center pt-4">
-            <a href="javascript:void(0)" class="btn btn-primary send me-5">Send</a>
-            <a href="" class="btn btn-primary" data-dismiss="modal">Cancle</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  {{-- create new account modal end --}}
-
   </div>
 @endsection
 @section('script')
