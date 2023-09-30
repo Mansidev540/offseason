@@ -38,7 +38,22 @@ class MemberController extends Controller
             $request->file('image')->move($dir, $fileName);
             $member->image = $fileName;
         }
+
+        // Create member's stripe account
+        $stripe = new \Stripe\StripeClient(env('STRIPE_SEC_KEY'));
+        $customer = $stripe->customers->create(
+            [
+                'name' => $request->name,
+                'phone' => $request->phone,
+                'metadata' => [
+                    'user_type' => 'member'
+                ]
+            ]
+        );
+        // update member with stripe id
+        $member->stripe_id = $customer->id;
         $member->save();
+        
         return redirect()->route('member.index');  
     }
     public function save_card_deatil(Request $request){
