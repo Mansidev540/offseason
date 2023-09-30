@@ -59,6 +59,7 @@
 <body class="login">
 
     <section class="d-flex align-items-center vh-100 px-3">
+    <div class="back"><a href="{{ route('welcome') }}"><i class="fa fa-angle-left"></i> offseason</div></a>
 
         <div class="container">
 

@@ -128,9 +128,10 @@
 
                         <div class="d-flex justify-content-center pt-4">
 
-                        <a href="{{route('service.delete',$value->id)}}" class="btn btn-primary me-5">Yes</a>
+                        
 
-                            <a href="" class="btn btn-primary">No</a>
+                            <a href="" class="btn">No</a>
+                            <a href="{{route('service.delete',$value->id)}}" class="btn btn-primary me-5">Yes</a>
 
                         </div>
 

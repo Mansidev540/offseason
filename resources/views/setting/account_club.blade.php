@@ -25,7 +25,7 @@
 
             <div class="profile-icon bd-color">
 
-                <img src="{{asset("uploads/$club->image")}}" alt="" width="250" height="250">
+                <img class="rounded-circle" src="{{asset("uploads/$club->image")}}" alt="" width="250" height="250">
 
                 
 

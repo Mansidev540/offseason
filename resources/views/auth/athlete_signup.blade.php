@@ -66,7 +66,7 @@
 
     <section class="d-flex align-items-center vh-100 px-3">
 
-        <div class="back"><a href="{{ route('register') }}"><i class="fa fa-angle-left"></i></a> Athelet</div>
+        <div class="back"><a href="{{ route('register') }}"><i class="fa fa-angle-left"></i></a> TRAINER</div>
 
         <div class="container">
 
@@ -84,9 +84,9 @@
 
                     </div>
 
-                    <?php $user = DB::table('users')->?>
+                  
 
-                    <input type="hidden" class="form-control" name="role"  value="$user->id">
+                    <input type="hidden" class="form-control" name="role"  value="athelet">
 
                     <div class="form-group">
 

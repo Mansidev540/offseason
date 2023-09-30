@@ -24,7 +24,7 @@
 
             <div class="profile-icon bd-color">
 
-                <img src="{{asset("uploads/$athlete->image")}}" alt="" width="250" height="250">
+                <img class="rounded-circle" src="{{asset("uploads/$athlete->image")}}" alt="" width="250" height="250">
 
                 
 

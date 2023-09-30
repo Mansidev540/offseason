@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Club;
 use App\Models\ClubCalender;
 use DB;
+use Response;
 use Auth;
 
 class ClubCalenderController extends Controller
@@ -59,6 +60,7 @@ class ClubCalenderController extends Controller
         $calender->trainer_rate = $trainer_rate;
         $calender->booking_rate = $booking_rate;
         $calender->total = $total;
+        $calender->schedule = 1; 
         $calender->save();
         return redirect()->route('clubcalender.index');
     }
@@ -86,8 +88,22 @@ class ClubCalenderController extends Controller
         // dd($calender_trainer);
         // $calender_trainer->delete();
         return redirect()->route('clubcalender.index');         
-    }   
-
+    }
+    public function member_calender(Request $request)
+    {
+        // $member = DB::table('member')->where('id',$request->id)->first();
+        // return Response::json($member); 
+        $data['member'] = DB::table('member')->where('id',$request->id)->get(["name","phone_no","image"]);
+        return response()->json($data);
+    }
+    public function tariner_calender(Request $request)
+    {
+        // $member = DB::table('member')->where('id',$request->id)->first();
+        // return Response::json($member); 
+        $data['member'] = DB::table('athlete')->where('id',$request->id)->get(["id","athlete_name","phone_no","image"]);
+        return response()->json($data);
+    
+    }
 
 
 }

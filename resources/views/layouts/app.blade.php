@@ -118,7 +118,7 @@
                 
                 <img src="{{ asset('asset/images/Offszn.png') }}" alt="OFFSEASON" width="100"> <strong>Club</strong>
                 <?php } else{ ?>
-                  <img src="{{ asset('asset/images/Offszn.png') }}" alt="OFFSEASON" width="100"> <strong>Athlete</strong>  
+                  <img src="{{ asset('asset/images/Offszn.png') }}" alt="OFFSEASON" width="100"> <strong>TRAINER</strong>  
                 <?php } ?>
             </div>
             <div class="right-side d-flex">                
@@ -127,10 +127,10 @@
                     if($user->role == "club"){
                         $club = DB::table('club')->where('user_id',Auth::user()->id)->first();
                         ?>
-                        <strong class="pe-3 text-uppercase">{{$club->club_name}}</strong> <img src="{{asset("uploads/$club->image")}}" alt="" width="40">
+                        <strong class="pe-3 text-uppercase">{{$club->club_name}}</strong> <img class="rounded-circle" src="{{asset("uploads/$club->image")}}" alt="" width="40">
                         <?php } else{ 
                             $athele = DB::table('athlete')->where('user_id',Auth::user()->id)->first(); ?>
-                            <strong class="pe-3 text-uppercase">{{$athele->athlete_name}}</strong> <img src="{{asset("uploads/$athele->image")}}" alt="" width="40">  
+                            <strong class="pe-3 text-uppercase">{{$athele->athlete_name}}</strong> <img class="rounded-circle" src="{{asset("uploads/$athele->image")}}" alt="" width="40">  
                         <?php } ?>
                     
                 </div>

@@ -16,6 +16,7 @@
 
 <body>
     <section class="d-flex align-items-center vh-100 px-3">
+    <div class="back"><a href="{{ route('welcome') }}"><i class="fa fa-angle-left"></i> offseason</div></a>
         <div class="container">
 
 
@@ -26,7 +27,7 @@
                         <a href="{{ route('club_signup') }}" class="btn button">Club</a>
                     </div>
                     <div class="col-12 col-sm-6 text-center">
-                        <a href="{{ route('athlete_signup') }}" class="btn button">Athlete</a>
+                        <a href="{{ route('athlete_signup') }}" class="btn button">TRAINER</a>
                     </div>
                 </div>
             </div>

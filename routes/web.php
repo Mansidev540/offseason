@@ -88,6 +88,8 @@ Route::group(['prefix' => 'clubcalender','middleware' =>'auth',"as"=>"clubcalend
     Route::post('/update', [App\Http\Controllers\ClubCalenderController::class, 'update'])->name('update');
     Route::post('/date', [App\Http\Controllers\ClubCalenderController::class, 'date'])->name('date');
     Route::post('/cancle', [App\Http\Controllers\ClubCalenderController::class, 'cancle'])->name('cancle');
+    Route::get('/member_calender', [App\Http\Controllers\ClubCalenderController::class, 'member_calender'])->name('member_calender');
+    Route::get('/tariner_calender', [App\Http\Controllers\ClubCalenderController::class, 'tariner_calender'])->name('tariner_calender');
 });
 Route::group(['prefix' => 'trainercalender','middleware' =>'auth',"as"=>"trainercalender."], function () {
     Route::get('/index', [App\Http\Controllers\TrainerClubController::class, 'index'])->name('index');

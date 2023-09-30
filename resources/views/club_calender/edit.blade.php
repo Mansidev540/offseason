@@ -19,7 +19,7 @@
                 <div class="d-flex flex-column">
                 <div class="club-info d-flex mb-5">
                         <div class="club-img me-4">
-                            <img src="{{asset("uploads/$club->image")}}" alt width="100">
+                            <img class="rounded-circle" src="{{asset("uploads/$club->image")}}" alt width="100">
                         </div>
                         <div class="club-dt">
                             <h2>{{$club->club_name}}</h2>
@@ -30,7 +30,7 @@
                     <?php  $member_select = DB::table('member')->where('id',$calender->member_id)->first();?>
                     <div class="club-info d-flex mb-5">
                         <div class="club-img me-4">
-                            <img src="{{ asset('asset/images/IMG_2763.png') }}" alt width="100">
+                            <img class="rounded-circle" src="{{asset("uploads/$member_select->image")}}" alt width="100">
                         </div>
                         <div class="club-dt">
                             <h2>{{$member_select->name}}</h2>
@@ -41,7 +41,7 @@
                     <?php  $tariner_select = DB::table('athlete')->where('id',$calender->roster_id)->first();?>
                     <div class="club-info d-flex mb-5">
                         <div class="club-img me-4">
-                        <img src="{{asset("uploads/$tariner_select->image")}}" alt width="100">
+                        <img class="rounded-circle" src="{{asset("uploads/$tariner_select->image")}}" alt width="100">
                         </div>
                         <div class="club-dt">
                             <h2>{{$tariner_select->athlete_name}}</h2>

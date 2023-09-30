@@ -40,7 +40,7 @@ cursor: pointer;
                     <!-- Add the image upload tag below the existing image tag -->
                     <div>
                         <label class="uplaod mt-2">
-                            Edit PICTURE<input type="file" class="uploadFile img border-0" value="Upload Photo" name="image">
+                            Edit Picture<input type="file" class="uploadFile img border-0" value="Upload Photo" name="image">
                         </label>
                     </div>
                     <div class="tab-div pt-4">
@@ -61,9 +61,9 @@ cursor: pointer;
                                                 <label>Name</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="name" class="form-control username"
-                                                        id="yourUsername" placeholder="Avery Chatman" required value="{{$member->name}}">
+                                                        id="yourUsername"  required value="{{$member->name}}">
                                                         <input type="hidden" name="id" class="form-control username"
-                                                        id="yourUsername" placeholder="Avery Chatman" value="{{$member->id}}">
+                                                        id="yourUsername"  value="{{$member->id}}">
                                                 </div>
                                                 
                                             </div>
@@ -71,29 +71,28 @@ cursor: pointer;
                                                 <label>PHONE NUMBER</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="phone_no" class="form-control username"
-                                                        id="yourUsername" placeholder="(817) 507 - 8936" required value="{{$member->phone_no}}">
+                                                        id="yourUsername"  required value="{{$member->phone_no}}">
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>ADDRESS</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="address" class="form-control username"
-                                                        id="yourUsername" placeholder="4629 Lincolnshire dr" required value="{{$member->address}}">
+                                                        id="yourUsername"  required value="{{$member->address}}">
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>City</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="city" class="form-control username"
-                                                        id="yourUsername" placeholder="Grand Prairie" required value="{{$member->city}}">
+                                                        id="yourUsername"  required value="{{$member->city}}">
                                                 </div>
                                             </div>
 
                                             <div class="row m-0">
                                                 <div class="col-6 p-0">
                                                     <label>STATE</label>
-                                                    <div class="input-group has-validation">
-                                                        <!--  -->
+                                                    <!-- <div class="input-group has-validation">
                                                         <select class="form-select username"
                                                             aria-label="Default select example" name="state">
                                                         <option value="">State</option>
@@ -109,14 +108,16 @@ cursor: pointer;
                                                         <option value="Rajasthan" <?php echo ($member->state == "Rajasthan") ? 'selected' : ''; ?>>Rajasthan</option>
 
                                                         </select>
-                                                    </div>
+                                                    </div> -->
+                                                    <input type="text" name="state" class="form-control username"
+                                                        id="yourUsername"  required value="{{$member->state}}">
                                                 </div>
                                                 <div class="col-6">
                                                     <label>ZIP CODE</label>
                                                     <div class="input-group has-validation">
-                                                        <input type="number" name="zip_code"
+                                                        <input type="text" name="zip_code"
                                                             class="form-control username" id="yourUsername"
-                                                            placeholder="12345" required value="{{$member->zip_code}}">
+                                                             required value="{{$member->zip_code}}">
                                                     </div>
                                                 </div>
                                             </div>
@@ -145,26 +146,26 @@ cursor: pointer;
                                     <div class="row tab m-0">
                                         <div class="col-lg-6 p-0">
                                         <div class="col-12 p-0">
-                                                <label>Name ON CARD</label>
+                                                <label>Name On Card</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="card_name" class="form-control username"
-                                                        id="yourUsername" placeholder="Avery Chatman" required value="{{$member->card_name}}">
+                                                        id="yourUsername"  required value="{{$member->card_name}}">
                                                         <input type="hidden" name="id" class="form-control username"
                                                         id="yourUsername" placeholder="Avery Chatman" value="{{$member->id}}">
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
-                                                <label>Card NUMBER</label>
+                                                <label>Card Number</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="card_no" class="form-control username"
-                                                        id="yourUsername" placeholder="1234 1234 1234 1234" required value="{{$member->card_no}}">
+                                                        id="yourUsername"  required value="{{$member->card_no}}">
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>VALID THRU</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="date" name="valid_date" class="form-control username"
-                                                        id="yourUsername" placeholder="MM/YY" required value="{{$member->valid_date}}">
+                                                        id="yourUsername"  required value="{{$member->valid_date}}">
                                                 </div>
                                                 <?php ?>
                                             </div>
@@ -172,14 +173,14 @@ cursor: pointer;
                                                 <label>SEC CODE</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="sec_code" class="form-control username"
-                                                        id="yourUsername" placeholder="123" required value="{{$member->sec_code}}">
+                                                        id="yourUsername"  required value="{{$member->sec_code}}">
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
-                                                <label>billing Zip Code</label>
+                                                <label>Billing Zip Code</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="billing_zip_code" class="form-control username"
-                                                        id="yourUsername" placeholder="76063" required value="{{$member->billing_zip_code}}">
+                                                        id="yourUsername" required value="{{$member->billing_zip_code}}">
                                                 </div>
                                             </div>
                                         </div>

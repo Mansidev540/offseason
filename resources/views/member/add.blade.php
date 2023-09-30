@@ -62,35 +62,35 @@ cursor: pointer;
                                                 <label>Name</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="name" class="form-control username"
-                                                        id="yourUsername" placeholder="Avery Chatman" required>
+                                                        id="yourUsername" required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>PHONE NUMBER</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="phone_no" class="form-control username"
-                                                        id="yourUsername" placeholder="(817) 507 - 8936" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>ADDRESS</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="address" class="form-control username"
-                                                        id="yourUsername" placeholder="4629 Lincolnshire dr" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>City</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="city" class="form-control username"
-                                                        id="yourUsername" placeholder="Grand Prairie" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
 
                                             <div class="row m-0">
                                                 <div class="col-6 p-0">
                                                     <label>STATE</label>
-                                                    <div class="input-group has-validation">
+                                                    <!-- <div class="input-group has-validation">
                                                         <select class="form-select username"
                                                             aria-labesl="Default select example" name="state">
                                                             <option selected>State</option>
@@ -98,14 +98,16 @@ cursor: pointer;
                                                             <option value="texas">texas</option>
                                                             <option value="texas">texas</option>
                                                         </select>
-                                                    </div>
+                                                    </div> -->
+                                                    <input type="text" name="state" class="form-control username"
+                                                        id="yourUsername"  required>
                                                 </div>
                                                 <div class="col-6">
                                                     <label>ZIP CODE</label>
                                                     <div class="input-group has-validation">
-                                                        <input type="number" name="zip_code"
+                                                        <input type="text" name="zip_code"
                                                             class="form-control username" id="yourUsername"
-                                                            placeholder="12345" required>
+                                                             required>
                                                     </div>
                                                 </div>
                                             </div>
@@ -134,38 +136,38 @@ cursor: pointer;
                                     <div class="row tab m-0">
                                         <div class="col-lg-6 p-0">
                                             <div class="col-12 p-0">
-                                                <label>Name ON CARD</label>
+                                                <label>Name On Card</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="text" name="card_name" class="form-control username"
-                                                        id="yourUsername" placeholder="Avery Chatman" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
-                                                <label>Card NUMBER</label>
+                                                <label>Card Number</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="card_no" class="form-control username"
-                                                        id="yourUsername" placeholder="1234 1234 1234 1234" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>VALID THRU</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="date" name="valid_date" class="form-control username"
-                                                        id="yourUsername" placeholder="MM/YY" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>SEC CODE</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="sec_code" class="form-control username"
-                                                        id="yourUsername" placeholder="123" required>
+                                                        id="yourUsername"  required>
                                                 </div>
                                             </div>
                                             <div class="col-12 p-0">
-                                                <label>billing Zip Code</label>
+                                                <label>Billing Zip Code</label>
                                                 <div class="input-group has-validation mb-3">
                                                     <input type="number" name="billing_zip_code" class="form-control username"
-                                                        id="yourUsername" placeholder="76063" required>
+                                                        id="yourUsername" required>
                                                 </div>
                                             </div>
                                         </div>

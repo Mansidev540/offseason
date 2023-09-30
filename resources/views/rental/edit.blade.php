@@ -50,6 +50,7 @@
             </div>
             <div class="form-group d-flex">
                 <label for="">Price</label>
+                <span class="input-group-text" id="basic-addon1">$</span>
                 <div class="edit-box"><input type="text" class="form-control mb-0" name="price" value="{{$rental->price}}"/></div>
             </div>
             <div class="d-flex justify-content-end pt-5 mt-4">

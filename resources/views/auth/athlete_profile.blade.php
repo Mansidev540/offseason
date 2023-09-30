@@ -64,7 +64,7 @@
 
 <section class="d-flex align-items-center px-3">
 
-        <div class="back"><a href="#"><i class="fa fa-angle-left"></i></a> Athlete</div>
+        <div class="back"><a href="#"><i class="fa fa-angle-left"></i></a> TRAINER</div>
 
         <div class="container">
 
@@ -78,7 +78,7 @@
 
                     <div class="form-group login-div">     
 
-                        <input type="text" class="form-control" placeholder="ATHLETE NAME" name="athlete_name">      
+                        <input type="text" class="form-control" placeholder="TRAINER NAME" name="athlete_name">      
 
                     </div>
 

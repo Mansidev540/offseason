@@ -49,7 +49,10 @@
             </div>
             <div class="form-group d-flex">
                 <label for="">Price</label>
-                <div class="edit-box"><input type="text" class="form-control mb-0" name="price" /></div>
+                <span class="input-group-text" id="basic-addon1">$</span>
+                <div class="edit-box">
+                    
+                    <input type="text" class="form-control mb-0" name="price" /></div>
             </div>
             <div class="d-flex justify-content-end pt-5 mt-4">
                 <a href="{{ route('rental.index') }}" class="btn me-5 border">Cancel</a>
