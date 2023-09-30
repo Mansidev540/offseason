@@ -64,7 +64,7 @@
 
                     <div class="modal-body">
 
-                        <p class="text-center">Send an email invite to add a new roster.</p>
+                        <p class="text-center">Send an email invite to add a new roster.</p>     
 
                         <input type="text" name="mail" id="mail" class="form-control mb-0">     
  
@@ -137,7 +137,7 @@
             <tr>
 
             <td class="py-4">
-                    <table cellpadding="0" cellspacing="0" width="100%" class="border-none">
+                    <table cellpadding="0" cellspacing="0" width="100%" class="border-none">   
                         <tr>
                             <td width="80">
                                 <a href="{{route('roster.detail',$value->id)}}"><img src="{{asset("uploads/$value->image")}}" alt="" width="56"></a>

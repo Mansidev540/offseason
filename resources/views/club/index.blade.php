@@ -60,7 +60,7 @@
 
 </div>
     <div class="table-responsive pb-5 pt-4">
-        <table class="table dt-responsive nowrap" id="responsive-data-table">
+        <table class="table dt-responsive nowrap" id="responsive-data-table">       
             <!-- <tr>
                 <th width="75%" class="py-3">Name</th>
                 <th width="15%" class="py-3">Price</th>
@@ -85,7 +85,7 @@
             @foreach($club as $value)
             <tr>
                 <td class="py-4">
-                    <table cellpadding="0" cellspacing="0" width="100%" class="border-none">
+                    <table cellpadding="0" cellspacing="0" width="100%" class="border-none"> 
                         <tr>
                             <td width="80">
                                 <a href="{{route('club.detail',$value->id)}}"><img src="{{asset("uploads/$value->image")}}" alt="" width="56"></a>
@@ -97,7 +97,7 @@
                 </td>
                 <td class="py-4" valign="middle">{{$value->city}},{{$value->state}}</td>
                 <td class="py-4" valign="middle">{{$value->phone_no}}</td>
-                <td class="py-4" valign="middle" style="color:green">Available</td>
+                <td class="py-4" valign="middle" style="color:green">Available</td>   
 
             </tr>
             @endforeach
@@ -117,7 +117,7 @@
 
 $(document).ready( function () {
 
-    $('#responsive-data-table').DataTable();
+    $('#responsive-data-table').DataTable();        
 
 } );
 

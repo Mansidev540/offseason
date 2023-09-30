@@ -124,7 +124,7 @@
 
                 </div>
 
-                <div id="schedule" class="tab-pane fade py-4 px-2 px-sm-3">
+                <div id="schedule" class="tab-pane fade py-4 px-2 px-sm-3">     
 
 
 

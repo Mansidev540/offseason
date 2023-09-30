@@ -31,7 +31,7 @@ class ClubCalenderController extends Controller
 
         $duration = 1;
 
-        $booking_rate = 9;
+        
 
         $athlete = DB::table('athlete')->where('id',$request->athlete_select)->first();
         $schedule8 = DB::table('schedule')->where('user_id',$athlete->user_id)->where('date',$request->date)->whereRaw('FIND_IN_SET(?, time)', [$request->time])->first();
@@ -40,7 +40,11 @@ class ClubCalenderController extends Controller
 
         $rental = DB::table('rental')->where('id',$request->rental)->first();
 
-        $total = $trainer_rate + $rental->price + $booking_rate;
+        $booking_total = $trainer_rate + $rental->price;
+
+        $booking_rate = $booking_total * 10 / 100;
+
+        $total = $booking_total + $booking_rate;
 
         $calender->club_id = $club->id;
         $calender->user_id = $club->user_id; 

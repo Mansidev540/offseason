@@ -30,7 +30,7 @@ class MemberController extends Controller
         $member->phone_no = $request->phone_no;
         $member->address = $request->address;
         $member->city = $request->city;                                                                               
-        $member->state = $request->state;
+        $member->state = $request->state;     
         $member->zip_code = $request->zip_code;
         $member->save();
         return redirect()->route('member.index');  
@@ -56,13 +56,13 @@ class MemberController extends Controller
     public function update(Request $request){
         
         $user = User::where('id',Auth::user()->id)->first(); 
-        $member = Member::where('id',$request->id)->first();
+        $member = Member::where('id',$request->id)->first();    
         $member->name = $request->name;        
         $member->user_id = $user->id;
         $member->phone_no = $request->phone_no;
         $member->address = $request->address;
         $member->city = $request->city;
-        $member->state = $request->state;
+        $member->state = $request->state;    
         $member->zip_code = $request->zip_code;
         $member->save();
         return redirect()->route('member.index');

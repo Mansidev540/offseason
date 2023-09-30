@@ -126,7 +126,7 @@
                             <a href=""><button class="modal_enter ms-2">Enter</button></a>
                         </div> -->
                         <div class="d-flex justify-content-center pt-4">
-                        <a href="javascript:void(0)" class="btn btn-primary me-5 member">Yes</a>
+                        <a href="" class="btn btn-primary me-5 member">Yes</a>
                             <a href="" class="btn btn-primary" data-dismiss="modal">No</a>
                         </div>
                     </div>
@@ -215,10 +215,5 @@
 @endsection
 @section('script')
 
-<script>
-$(document).on('click', '.member', function(e){
 
-
-});
-</script>
 @endsection

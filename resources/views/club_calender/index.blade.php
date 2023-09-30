@@ -758,7 +758,7 @@
                     
                 <td width="400">
                     <a href="{{$route_calender}}">
-                        <table width="400" class="clen-box dark-box d-block">
+                        <table width="400" class="clen-box dark-box d-block">       
                             <tr>
                                 <td width="74">
                                     <img src="{{asset("uploads/$roster->image")}}" alt="" width="74">

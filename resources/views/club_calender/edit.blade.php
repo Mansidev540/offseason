@@ -80,7 +80,7 @@
             <p class="detail"><span>Duration :</span> 1 Hour</p>
             <p class="detail"><span>Rental :</span> ${{$rental->price}} ({{$rental->name}})</p>
             <p class="detail"><span>Trainer:</span> ${{$calender->trainer_rate}}</p>
-            <p class="detail"><span>Booking Fee:</span> ${{$calender->booking_rate}}</p>
+            <p class="detail"><span>Booking Fee:</span> ${{$calender->booking_rate}}(10%)</p>
             <p class="detail"><span>Total:</span> ${{$calender->total}}</p>
         </div>
         <div class="col-12 d-flex justify-content-end">

@@ -74,11 +74,15 @@
             <p class="detail"><span>Rental :</span> {{$rental->name}}</p>        
             <?php $opration = DB::table('opration')->where('club_id',$club->id)->first();
             $rate = $calender->trainer_rate * $opration->club_fee / 100;
-            $net = $calender->trainer_rate - $rate - 2;
+            $rate_total = $calender->trainer_rate - $rate;
+
+            $booking_fee = $rate_total *10 /100;
+           
+            $net = $rate_total - $booking_fee;
             ?>
             <p class="detail"><span>Trainer:</span> ${{$calender->trainer_rate}}</p>
             <p class="detail"><span>Club Fee:</span> {{ $opration->club_fee }}%(${{$rate}})</p>
-            <p class="detail"><span>Booking Fee:</span> 5%($2.00)</p>    
+            <p class="detail"><span>Booking Fee:</span> 10%({{$booking_fee}})</p>    
             <p class="detail"><span>Net:</span> ${{$net}}</p>
             <input type="hidden" name="club_calender_id" value="{{$calender->id}}" >
             <input type="hidden" name="net" value="{{$net}}">      

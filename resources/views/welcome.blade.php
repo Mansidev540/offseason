@@ -19,7 +19,7 @@
             color: #FFFFFF;
             background-color: transparent;
             font-weight: 700;
-            border: none !important;
+            border: none !important;           
             padding: 10px;
         }
 
@@ -74,4 +74,4 @@
     </div>
 </body>
 
-</html>
+</html>    
