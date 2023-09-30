@@ -23,6 +23,8 @@ cursor: pointer;
                     <div class="arrow mx-3"><i class="fa fa-angle-right"></i></div>
                     <div class="text-uppercase"><u>New Member</u></div>
                 </div>
+                <form id="member" method="POST" action="{{ route('member.save') }}" enctype="multipart/form-data">
+                @csrf
                 <div class="pt-4">
                 <div class="d-flex justify-content-between">
                         <div class="club-info d-flex">
@@ -39,7 +41,7 @@ cursor: pointer;
                     <!-- Add the image upload tag below the existing image tag -->
                     <div>
                         <label class="uplaod mt-2">
-                            ADD PICTURE<input type="file" class="uploadFile img border-0" value="Upload Photo">
+                            ADD PICTURE<input type="file" class="uploadFile img border-0" value="Upload Photo" name="image">
                         </label>
                     </div>
                     <div class="tab-div pt-4">
@@ -52,15 +54,14 @@ cursor: pointer;
                         <div class="tab-content">
 
                             <div id="info" class="tab-pane active pt-4">
-                            <form id="member" method="POST" action="{{ route('member.save') }}" enctype="multipart/form-data">
-                                 @csrf
+
                                 <div class="">
                                     <div class="row tab m-0">
                                         <div class="col-lg-6 p-0">
                                             <div class="col-12 p-0">
                                                 <label>Name</label>
                                                 <div class="input-group has-validation mb-3">
-                                                    <input type="text" n ame="name" class="form-control username"
+                                                    <input type="text" name="name" class="form-control username"
                                                         id="yourUsername" placeholder="Avery Chatman" required>
                                                 </div>
                                             </div>

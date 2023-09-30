@@ -26,6 +26,7 @@ class ClubCalenderController extends Controller
     }
     public function save(Request $request)
     {
+        
         $calender = new ClubCalender();
         $club = DB::table('club')->where('user_id',Auth::user()->id)->first();
 

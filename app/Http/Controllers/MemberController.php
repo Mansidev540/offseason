@@ -22,7 +22,6 @@ class MemberController extends Controller
         return view('member.add');
     }
     public function save(Request $request){
-        
         $user = User::where('id',Auth::user()->id)->first();
         $member = new Member();        
         $member->name = $request->name;                                                                
@@ -32,6 +31,13 @@ class MemberController extends Controller
         $member->city = $request->city;                                                                               
         $member->state = $request->state;     
         $member->zip_code = $request->zip_code;
+        if ($request->hasFile('image')) {
+            $dir = 'uploads/';
+            $extension = strtolower($request->file('image')->getClientOriginalExtension()); // get image extension
+            $fileName = str_random() . '.' . $extension; // rename image
+            $request->file('image')->move($dir, $fileName);
+            $member->image = $fileName;
+        }
         $member->save();
         return redirect()->route('member.index');  
     }
@@ -64,6 +70,13 @@ class MemberController extends Controller
         $member->city = $request->city;
         $member->state = $request->state;    
         $member->zip_code = $request->zip_code;
+        if ($request->hasFile('image')) {
+            $dir = 'uploads/';
+            $extension = strtolower($request->file('image')->getClientOriginalExtension()); // get image extension
+            $fileName = str_random() . '.' . $extension; // rename image
+            $request->file('image')->move($dir, $fileName);
+            $member->image = $fileName;
+        }
         $member->save();
         return redirect()->route('member.index');
     }

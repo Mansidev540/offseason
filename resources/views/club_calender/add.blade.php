@@ -44,7 +44,7 @@
                         </div>
                         <div class="club-dt d-flex align-items-center">
                             <a class="Trainer_btn" href="javascript:void(0)" data-toggle="modal"
-                                data-target="#choose_trainee">Choose Trainee</a>
+                                data-target="#choose_trainee">Choose Trainer</a>
                         </div>
                     </div>
                 </div>
@@ -105,17 +105,17 @@
                                     <th width="30%" class="py-3">Number</th>
                                 </tr>
                                 <?php $member = DB::table('member')->get();?>
-                                @foreach($member as $member)
+                                @foreach($member as $member_value)
                                 <tr>
                                     <td>
-                                        <input class="p-0 m-0" type="radio" name="member_select"
-                                            id="member_select_{{$member->id}}" value="{{$member->id}}">
+                                    <input class="p-0 m-0" type="radio" name="member_select"
+                                            id="member_{{$member_value->id}}" value="{{$member_value->id}}">
                                     </td>
                                     <td>
                                         <img class="rounded-circle" src="{{ asset('asset/images/IMG_2763.png') }}"
-                                                alt="" width="50px">&nbsp;&nbsp;&nbsp;{{$member->name}}
+                                                alt="" width="50px">&nbsp;&nbsp;&nbsp;{{$member_value->name}}
                                     </td>
-                                    <td class="py-4" valign="middle">{{$member->phone_no}}</td>
+                                    <td class="py-4" valign="middle">{{$member_value->phone_no}}</td>
                                 </tr>
                                 @endforeach
                             </table>
@@ -126,7 +126,7 @@
                             <a href=""><button class="modal_enter ms-2">Enter</button></a>
                         </div> -->
                         <div class="d-flex justify-content-center pt-4">
-                        <a href="" class="btn btn-primary me-5 member">Yes</a>
+                        <a href="" class="btn btn-primary me-5" data-dismiss="modal">Yes</a>
                             <a href="" class="btn btn-primary" data-dismiss="modal">No</a>
                         </div>
                     </div>

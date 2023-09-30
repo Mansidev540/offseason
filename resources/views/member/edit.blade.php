@@ -20,16 +20,18 @@ cursor: pointer;
                 <div class="breadcrumb">
                     <div><a href="{{ route('member.index') }}" class="text-uppercase"><u>Member</u></a></div>
                     <div class="arrow mx-3"><i class="fa fa-angle-right"></i></div>
-                    <div class="text-uppercase"><u>AVERY CHATMAN</u></div>
+                    <div class="text-uppercase"><u>{{$member->name}}</u></div>
                 </div>
+                <form id="member" method="POST" action="{{ route('member.update')}}" enctype="multipart/form-data"> 
+                            @csrf
                 <div class="pt-4">
                 <div class="d-flex justify-content-between">
                         <div class="club-info d-flex">
                             <div class="club-img me-4">
-                                <img src="{{ asset('asset/images/IMG_2763.png') }}" alt width="100">
+                                <img src="{{asset("uploads/$member->image")}}" alt width="100">
                             </div>
                             <div class="club-dt">
-                                <h2>Avery Chatman</h2>
+                                <h2 class="text-uppercase">{{$member->name}}</h2>
                                 <div class="mb-2">Total Booking:0</div>
                             </div>
                         </div>
@@ -38,7 +40,7 @@ cursor: pointer;
                     <!-- Add the image upload tag below the existing image tag -->
                     <div>
                         <label class="uplaod mt-2">
-                            Edit PICTURE<input type="file" class="uploadFile img border-0" value="Upload Photo">
+                            Edit PICTURE<input type="file" class="uploadFile img border-0" value="Upload Photo" name="image">
                         </label>
                     </div>
                     <div class="tab-div pt-4">
@@ -51,8 +53,7 @@ cursor: pointer;
                         <div class="tab-content">
 
                             <div id="info" class="tab-pane active pt-4">
-                            <form id="member" method="POST" action="{{ route('member.update')}}" enctype="multipart/form-data"> 
-                            @csrf
+
                                 <div class="">
                                     <div class="row tab m-0">
                                         <div class="col-lg-6 p-0">
@@ -165,6 +166,7 @@ cursor: pointer;
                                                     <input type="date" name="valid_date" class="form-control username"
                                                         id="yourUsername" placeholder="MM/YY" required value="{{$member->valid_date}}">
                                                 </div>
+                                                <?php ?>
                                             </div>
                                             <div class="col-12 p-0">
                                                 <label>SEC CODE</label>

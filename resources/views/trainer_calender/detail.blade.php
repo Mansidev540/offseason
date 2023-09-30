@@ -89,7 +89,7 @@
         </div>
         <div class="col-12 d-flex justify-content-end">
             
-           <?php $calender_trainer = DB::table('trainer_calender')->where('club_calender_id',$calender->id)->where('user_id',Auth::user()->id)->first(); 
+           <?php $calender_trainer = DB::table('trainer_ca lender')->where('club_calender_id',$calender->id)->where('user_id',Auth::user()->id)->first(); 
            if(is_null($calender_trainer)){ ?>
            <button type="submit" class="scheduled">Schedule</button>
            <?php }
